@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Test Page</title>
+    <style>
+        body {
+            background-color: green; /* Sets the background color to green */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff; /* A nice blue for the button */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // Get a reference to the button
+        const myButton = document.getElementById('myButton');
+
+        // Add an event listener to the button
+        myButton.addEventListener('click', () => {
+            alert('Button was clicked!');
+        });
+    </script>
+</body>
+</html>
+```
